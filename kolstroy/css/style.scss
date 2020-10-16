@@ -410,6 +410,7 @@ hr {
   &__item {
     text-align: center;
     padding: 20px 0;
+    color: #303030;
     h3 {
     text-align: center;
     font-size: 54px;
@@ -418,10 +419,14 @@ hr {
     }
     a {
       text-decoration: none;
-      color: black;
+      color: #ffc249;
       font-size: 50px;
       padding: 10px 0 20px 0;
       display: block;
+      transition: 0.2s;
+    }
+    a:hover {
+      color: #ffaa00;
     }
     &-link {
       font-family: 'Roboto', sans-serif;
