@@ -313,12 +313,33 @@ hr {
   padding: 20px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  font-weight: 300;
 }
 
 .services__work .opis h5 {
   font-size: 18px;
   padding: 10px 0;
   font-weight: 500;
+}
+
+.services__work__link {
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  background: #ffc652;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  padding: 10px;
+  margin: 10px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.services__work__link:hover {
+  background: #fac252;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 5px 0px;
+          box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 5px 0px;
 }
 
 .services__work:hover {
@@ -374,6 +395,14 @@ hr {
   font-weight: 400;
   background-color: #ffc652;
   text-decoration: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.product__call:hover {
+  background: #fac252;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 5px 0px;
+          box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 5px 0px;
 }
 
 .info {
@@ -564,8 +593,9 @@ hr {
 }
 
 .prices .btn-link-work:hover {
-  -webkit-box-shadow: 2px 2px 2px 0px #a97100;
-          box-shadow: 2px 2px 2px 0px #a97100;
+  background: #fac252;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 5px 0px;
+          box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 5px 0px;
 }
 
 .table {

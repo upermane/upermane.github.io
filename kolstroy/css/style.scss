@@ -245,12 +245,29 @@ hr {
          .opis {
             padding: 20px;
             font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: 300;
             h5 {
               font-size: 18px;
               padding: 10px 0;
               font-weight: 500;
             }
-            font-size: 16px;
+         }
+         &__link {
+           text-decoration: none;
+           display: inline-block;
+           color: black;
+           background: #ffc652;
+           font-size: 16px;
+           font-family: 'Roboto', sans-serif;
+           font-weight: 400;
+           padding: 10px;
+           margin: 10px 0;
+           transition: 0.4s;
+         }
+         &__link:hover {
+          background: #fac252;
+          box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 5px 0px;
          }
      }
      &__work:hover {
@@ -294,6 +311,11 @@ hr {
     font-weight: 400;
     background-color: #ffc652;
     text-decoration: none;
+    transition: 0.4s;
+  }
+  &__call:hover {
+    background: #fac252;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 5px 0px;
   }
 }
 
@@ -448,7 +470,8 @@ hr {
     animation-duration: 1s; /* don't forget to set a duration! */
   }
   .btn-link-work:hover {
-    box-shadow: 2px 2px 2px 0px #a97100;
+    background: #fac252;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 5px 0px;
   }
 }
 .table {
