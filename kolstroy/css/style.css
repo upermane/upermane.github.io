@@ -135,9 +135,9 @@ body {
 hr {
   margin: 20px auto 30px;
   border: none;
-  height: 6px;
-  width: 120px;
-  background-color: yellow;
+  height: 5px;
+  width: 130px;
+  background-color: #ffc652;
 }
 
 .swiper {
