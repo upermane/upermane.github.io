@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цены</title>
+    <link rel="stylesheet" href="css/twentytwenty.css">
+    <link rel="stylesheet" href="css/BeerSlider.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Staatliches&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">
+                    <a class="logo__link" href="#">kolstroy v2</a>
+                </div>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Главная</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">О нас</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Цены</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="prices">
+        <div class="container">
+            <div class="title">
+                <h2>Цены на услуги</h2>
+            </div>
+            <hr>
+            <table class="table table-responsive">
+                <tbody>
+                    <tr class="price row">
+                        <td class="col s9">Демонтаж плитки</td>
+                        <td class="col s3">6 руб. м2</td>
+                    </tr>
+                    <tr class="price row">
+                        <td class="col s9">Подготовка стен, пола (выравнивание, насечка)</td>
+                        <td class="col s3">6 руб. м2</td>
+                    </tr>
+                    <tr class="price row">
+                        <td class="col s9">Устройство керамической плитки размер: от 20 до 60 см</td>
+                        <td class="col s3">18 руб. м2</td>
+                    </tr>
+                    <tr class="price row">
+                        <td class="col s9">Устройство керамической плитки размер: от 61 до 100 см</td>
+                        <td class="col s3">20 руб. м2</td>
+                    </tr>
+                    <tr class="price row">
+                        <td class="col s9">Устройство керамической плитки размер: от 15 до 19 см</td>
+                        <td class="col s3">22 руб м2</td>
+                    </tr>
+                    <tr class="price row">
+                        <td class="col s9">Устройство керамической плитки размер: от 8 до 14 см</td>
+                        <td class="col s3">24 руб. м2</td>
+                    </tr>
+                    <tr class="price row">
+                        <td class="col s9">Укладка мозайки</td>
+                        <td class="col s3">28 руб. м2</td>
+                    </tr>
+                    <tr class="price row">
+                        <td class="col s9">Устройство откосов из плитки</td>
+                        <td class="col s3">18 руб. м.п.</td>
+                    </tr>
+                    <tr class="price row">
+                        <td class="col s9">Установка бордюра (фриза)</td>
+                        <td class="col s3">14 руб. м.п.</td>
+                    </tr>
+                    <tr class="price row">
+                        <td class="col s9">Заполнение швов фугой на плитке</td>
+                        <td class="col s3">2 руб. м2</td>
+                    </tr>
+                    <tr class="price row">
+                        <td class="col s9">Укладка керамической плитки по диагонали</td>
+                        <td class="col s3">20% к цене</td>
+                    </tr>
+                    <tr class="price row">
+                        <td class="col s9">Укладка плитки без шва</td>
+                        <td class="col s3">15% к цене</td>
+                    </tr>
+                    <tr class="price row">
+                        <td class="col s9">Укладка плитки без шва</td>
+                        <td class="col s3">15% к цене</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- <a class="btn btn-link-work wow" href="#">Весь список цен на услуги</a> -->
+        </div>
+    </div>
+    <div id="container1" class="test-srav">
+        <img src="images/gallery/photo_2020-10-01_13-58-37.jpg">
+        <img src="images/gallery/photo_srav.jpg">
+    </div>
+
+    <div id="beer-slider" class="beer-slider" data-beer-label="">
+        <img src="images/Girls-1.jpg" alt="Original - Man holding beer">
+        <div class="beer-reveal" data-beer-label="">
+            <img src="images/Girls-2.jpg" alt="Processed - Man holding beer">
+        </div>
+    </div>
+
+
+    <script src="js/BeerSlider.js"></script>
+    <script>
+      var slider = new BeerSlider( document.getElementById( "beer-slider" ) );
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <script>
+        $(window).load(function () {
+            $("#container1").twentytwenty();
+        });
+    </script>
+</body>
+
+</html>
