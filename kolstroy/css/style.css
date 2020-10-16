@@ -76,6 +76,8 @@ body {
   padding-bottom: 4px;
   -webkit-transition: 0.1s;
   transition: 0.1s;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 
 .menu__link:hover {

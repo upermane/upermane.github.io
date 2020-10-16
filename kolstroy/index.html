@@ -39,17 +39,17 @@
             </div>
         </div>
     </header>
-    <section class="main">
+    <section class="main" id="main">
         <h1 class="main__title">Kolstroy</h1>
         <p class="main__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, incidunt veniam
             distinctio quos cum molestiae cupiditate numquam odio exercitationem nulla, iure ut illo, voluptatem
             mollitia ratione eaque officiis repellat veritatis.</p>
-        <a class="main__scroll-down" href="#">
+        <a class="main__scroll-down" href="#scroll-down">
             <i class="fas fa-chevron-circle-down"></i>
         </a>
     </section>
 
-    <section class="credo">
+    <section class="credo" id="scroll-down">
         <div class="container">
             <h2 class="credo__title">гибкость к потребностям заказчика, мобильность в решении технических задач,
             инициатива и оперативность
@@ -331,6 +331,7 @@
 
 
     <link rel="stylesheet" href="js/swiper.min.js">
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
@@ -350,6 +351,23 @@
     <script src="js/wow.js"></script>
     <script>
         new WOW().init();
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $("#main").on("click","a", function (event) {
+        //отменяем стандартную обработку нажатия по ссылке
+        event.preventDefault();
+        
+        //забираем идентификатор бока с атрибута href
+        var id = $(this).attr('href'),
+        
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+        top = $(id).offset().top;
+        
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 1500);
+        });
+        });
     </script>
 </body>
 
