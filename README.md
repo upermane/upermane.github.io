@@ -1,4 +1,5 @@
 # upermane
 
 [kolstroy](https://upermane.github.io/kolstroy)
-[kolstroy](https://upermane.github.io/mitravel)
+
+[mitravel](https://upermane.github.io/mitravel)
