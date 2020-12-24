@@ -76,8 +76,6 @@ body {
   padding-bottom: 4px;
   -webkit-transition: 0.1s;
   transition: 0.1s;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
 }
 
 .menu__link:hover {
@@ -85,12 +83,11 @@ body {
 }
 
 .main {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(49, 53, 61, 0.4)), to(rgba(49, 53, 61, 0.3))), url(../images/kaska2.jpg);
-  background: linear-gradient(0deg, rgba(49, 53, 61, 0.4), rgba(49, 53, 61, 0.3)), url(../images/kaska2.jpg);
+  background: url(../images/kaska2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,25 +118,14 @@ body {
   margin: 0;
   width: 460px;
   text-align: center;
-  color: white;
-}
-
-.main__scroll-down {
-  font-size: 34px;
-  margin: 30px;
-  padding: 10px;
-  text-decoration: none;
-  color: #ffc652;
-  -webkit-animation: bounce 2s ease 3s infinite;
-          animation: bounce 2s ease 3s infinite;
 }
 
 hr {
   margin: 20px auto 30px;
   border: none;
-  height: 5px;
-  width: 130px;
-  background-color: #ffc652;
+  height: 6px;
+  width: 120px;
+  background-color: yellow;
 }
 
 .swiper {
@@ -228,7 +214,6 @@ hr {
           align-items: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  text-transform: uppercase;
 }
 
 .advantages {
@@ -273,7 +258,6 @@ hr {
   padding: 10px 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  text-transform: uppercase;
 }
 
 .advantages__item p {
@@ -329,33 +313,12 @@ hr {
   padding: 20px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  font-weight: 300;
 }
 
 .services__work .opis h5 {
   font-size: 18px;
   padding: 10px 0;
   font-weight: 500;
-}
-
-.services__work__link {
-  text-decoration: none;
-  display: inline-block;
-  color: black;
-  background: #ffc652;
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  padding: 10px;
-  margin: 10px 0;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.services__work__link:hover {
-  background: #fac252;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 5px 0px;
-          box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 5px 0px;
 }
 
 .services__work:hover {
@@ -411,14 +374,6 @@ hr {
   font-weight: 400;
   background-color: #ffc652;
   text-decoration: none;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.product__call:hover {
-  background: #fac252;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 5px 0px;
-          box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 5px 0px;
 }
 
 .info {
@@ -524,7 +479,6 @@ hr {
 .feedback__item {
   text-align: center;
   padding: 20px 0;
-  color: #303030;
 }
 
 .feedback__item h3 {
@@ -536,16 +490,10 @@ hr {
 
 .feedback__item a {
   text-decoration: none;
-  color: #ffc249;
+  color: black;
   font-size: 50px;
   padding: 10px 0 20px 0;
   display: block;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.feedback__item a:hover {
-  color: #ffaa00;
 }
 
 .feedback__item-link {
@@ -616,9 +564,8 @@ hr {
 }
 
 .prices .btn-link-work:hover {
-  background: #fac252;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 5px 0px;
-          box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 5px 0px;
+  -webkit-box-shadow: 2px 2px 2px 0px #a97100;
+          box-shadow: 2px 2px 2px 0px #a97100;
 }
 
 .table {
