@@ -57,8 +57,16 @@
 }
 
 @media (max-width: 440px) { 
+    .header__logo {
+        display: none;
+    }
     .logo {
         font-size: 26px;
+    }
+    .header__phone {
+        border: 3px solid;
+        padding: 10px;
+        font-weight: 500;
     }
     .title {
         font-size: 36px;
