@@ -54,12 +54,16 @@
     .footer__wrapper {
         margin: 36px 0  ;
     }
+    .image-blok {
+        width: 33%;
+        padding: 10px;
+    }
 }
 
 @media (max-width: 440px) { 
-    .header__logo {
+    /* .header__logo {
         display: none;
-    }
+    } */
     .logo {
         font-size: 26px;
     }
@@ -94,6 +98,10 @@
     }
     .footer__copyright--text {
         font-size: 12px;
+    }
+    .image-blok {
+        width: 49%;
+        padding: 10px;
     }
 }
 
