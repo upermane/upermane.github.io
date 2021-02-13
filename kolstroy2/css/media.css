@@ -6,12 +6,16 @@
         padding: 20px;
         left: 0%;
     }
-}
-
-@media (max-width: 970px) {
     .header__list {
         display: none;
     }
+    .mob-menu {
+        display: block;
+    }
+}
+
+@media (max-width: 970px) {
+
     .info__block {
         flex-direction: column;
     }
@@ -76,10 +80,7 @@
     }
 }
 
-@media (max-width: 440px) { 
-    /* .header__logo {
-        display: none;
-    } */
+@media (max-width: 512px) {
     .logo {
         font-size: 26px;
     }
@@ -88,6 +89,9 @@
         padding: 10px;
         font-weight: 500;
     }
+}
+
+@media (max-width: 440px) { 
     .title {
         font-size: 36px;
     }
