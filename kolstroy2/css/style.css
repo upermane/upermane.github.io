@@ -243,7 +243,7 @@ body {
     letter-spacing: 2px;
     color: var(--white-color);
     transition: background-position-x 0.9s linear;
-    cursor: none;
+    cursor: default;
 }
 
 .banner__title:hover {
@@ -336,10 +336,17 @@ body {
     align-items: center;
 }
 
+.services__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .services__work {
     display: flex;
-    align-items: center;
-    margin: 20px 0;
+    flex-direction: column;
+    max-width: 30%;
+    text-align: center;
+    margin: 20px;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0px 1px 15px rgb(0 0 0 / 25%);
@@ -352,13 +359,13 @@ body {
 
 .services__text-title {
     font-size: 28px;
+    margin: 5px;
     font-weight: 500;
     color: var(--dark-color);
 }
 
 .services__text {
-    min-width: 400px;
-    padding-left: 20px;
+    margin: 0;
 }
 
 .services__link {

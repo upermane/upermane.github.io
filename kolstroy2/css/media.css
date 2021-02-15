@@ -1,4 +1,4 @@
-@media (max-width: 1166px) {
+@media (max-width: 1250px) {
     .advantages__card {
         max-width: 270px;
     }
@@ -11,6 +11,13 @@
     }
     .mob-menu {
         display: block;
+    }
+    .services__wrapper {
+        justify-content: center;
+    }
+    .services__work {
+        max-width: 42%;
+        margin: 30px;
     }
 }
 
@@ -31,6 +38,9 @@
     }
     .about__text {
         width: calc(45% - 20px);
+    }
+    .services__work {
+        margin: 20px;
     }
 }
 
@@ -53,6 +63,12 @@
     }
     .advantages__card:not(:last-child) {
         margin-bottom: 140px;
+    }
+    .services__wrapper {
+        flex-direction: column;
+    }
+    .services__work {
+        max-width: 100%;
     }
     .footer-feedback {
         padding: 36px 0;
@@ -104,15 +120,10 @@
     .header__content {
         flex-direction: column;
     }
-    .services__work {
-        max-width: 300px;
-        margin: 10px;
+    .services__text-title {
+        font-size: 22px;
     }
-    .services__text {
-        min-width: auto;
-        text-align: center;
-        padding: 10px;
-    }
+
     .discount__text {
         font-size: 22px;
     }
