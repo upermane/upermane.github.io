@@ -169,7 +169,7 @@ body {
     height: 0%;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 9;
     top: 0;
     left: 0;
     background-color: rgb(0,0,0);
@@ -354,15 +354,16 @@ body {
     transition: box-shadow 0.4s;
 }
 .services__work .img-overlay {
-    display: none;
+    opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 99;
+    z-index: 3;
+    transition: opacity 0.8s;
 }
 
 .services__work:hover .img-overlay{
-    display: block;
+    opacity: 1;
 }
 .services__work:hover {
     box-shadow: rgb(0 0 0 / 35%) 4px 4px 15px 2px;
