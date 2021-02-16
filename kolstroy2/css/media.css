@@ -64,11 +64,17 @@
     .advantages__card:not(:last-child) {
         margin-bottom: 140px;
     }
+    .services {
+        padding: 30px 0 0 0;
+    }
     .services__wrapper {
         flex-direction: column;
     }
     .services__work {
         max-width: 100%;
+    }
+    .info {
+        padding: 30px 0;
     }
     .footer-feedback {
         padding: 36px 0;
