@@ -94,6 +94,7 @@ body {
     font-weight: 700;
     font-size: 46px;
     color: var(--dark-color);
+    margin: 20px 0;
 }
 
 .header {
@@ -270,7 +271,7 @@ body {
 }
 
 .advantages {
-    padding: 63px 0 224px;
+    padding: 63px 0 170px;
     text-align: center;
 }
 
@@ -326,6 +327,10 @@ body {
 .advantages__card-descr {
     font-weight: 400;
     color: var(--dark-color);
+}
+
+.services {
+    padding-top: 60px;
 }
 
 .services__container {
