@@ -42,6 +42,10 @@
     .services__work {
         margin: 20px;
     }
+    .info__block::before, 
+    .info__block::after {
+        display: none;
+    }
 }
 
 @media (max-width: 867px) {
@@ -110,6 +114,9 @@
         border: 3px solid;
         padding: 10px;
         font-weight: 500;
+    }
+    .banner {
+        height: 60vh;
     }
 }
 
