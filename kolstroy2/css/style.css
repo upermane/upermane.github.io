@@ -111,6 +111,7 @@ body {
     color: var(--white-color);
     background-color: var(--dark-color);
     padding: 16px 0;
+    box-shadow: 1px 1px 1px 0px var(--dark-color);
 }
 
 .header__container {
