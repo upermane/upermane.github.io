@@ -62,7 +62,6 @@ img {
 
 body {
     overflow-anchor: none;
-    margin: 0;
     font-family: 'Fira Sans', sans-serif;
 }
 
@@ -119,9 +118,9 @@ body {
 
 .logo {
     font-size: 36px;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     font-weight: 700;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comforta', cursive;
 }
 
 .header__phone {
@@ -238,7 +237,6 @@ body {
     font-size: 62px;
     text-transform: uppercase;
     margin: 0 0 10px 0;
-    font-weight: 700;
     letter-spacing: 2px;
     color: var(--white-color);
     transition: background-position-x 0.9s linear;
@@ -482,14 +480,6 @@ body {
     /* background-color: #f7f7f7; */
 }
 
-/* .prices .title h2 {
-    font-size: 36px; */
-    /* font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    text-align: center;
-    padding: 0px 0 10px;
-} */
-
 .prices td {
     text-align: left;
 }
@@ -501,7 +491,7 @@ body {
     margin: 20px 0;
     border-radius: 8px;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
     background-color: var(--accent-color);
     text-align: center;
     transition: box-shadow 0.3s;
@@ -584,6 +574,7 @@ body {
 .previous__descr {
     margin: 0 0 30px 0;
     text-align: center;
+    font-weight: 400;
 }
 
 .previous__list {
@@ -673,11 +664,19 @@ body {
 }
 
 .footer__logo {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comforta', cursive;
+    letter-spacing: 4px;
 }
 
 .footer-feedback__about--text {
     max-width: 300px;
+    font-weight: 300;
+}
+
+.footer-link {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 
 .footer__copyright {
