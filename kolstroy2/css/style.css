@@ -1,30 +1,30 @@
 @font-face {
-    font-family: 'Lato';
-    src: url('../fonts/Lato-Thin.woff2') format('woff2'), url('../fonts/Lato-Thin.woff') format('woff');
-    font-display: swap;
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Lato';
-    src: url('../fonts/Lato-Light.woff2') format('woff2'), url('../fonts/Lato-Light.woff') format('woff');
+    font-family: 'Fira Sans';
+    src: url('../fonts/FiraSans-Light.woff2') format('woff2'), url('../fonts/FiraSans-Light.woff') format('woff');
     font-display: swap;
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Lato';
-    src: url('../fonts/Lato-Regular.woff2') format('woff2'), url('../fonts/Lato-Regular.woff') format('woff');
+    font-family: 'Fira Sans';
+    src: url('../fonts/FiraSans-Regular.woff2') format('woff2'), url('../fonts/FiraSans-Regular.woff') format('woff');
     font-display: swap;
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Lato';
-    src: url('../fonts/Lato-Bold.woff2') format('woff2'), url('../fonts/Lato-Bold.woff') format('woff');
+    font-family: 'Fira Sans';
+    src: url('../fonts/FiraSans-Medium.woff2') format('woff2'), url('../fonts/FiraSans-Medium.woff') format('woff');
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../fonts/FiraSans-Bold.woff2') format('woff2'), url('../fonts/FiraSans-Bold.woff') format('woff');
     font-display: swap;
     font-weight: 700;
     font-style: normal;
@@ -117,10 +117,10 @@ body {
 }
 
 .logo {
-    font-size: 36px;
-    letter-spacing: 4px;
+    font-size: 34px;
+    letter-spacing: 2px;
     font-weight: 700;
-    font-family: 'Comforta', cursive;
+    font-family: 'Comfortaa', cursive;
 }
 
 .header__phone {
@@ -664,8 +664,8 @@ body {
 }
 
 .footer__logo {
-    font-family: 'Comforta', cursive;
-    letter-spacing: 4px;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 2px;
 }
 
 .footer-feedback__about--text {
@@ -686,7 +686,7 @@ body {
 }
 
 .footer__copyright--text {
-    font-weight: 200;
+    font-weight: 300;
     font-size: 18px;
     color: white;
     letter-spacing: 1px;
