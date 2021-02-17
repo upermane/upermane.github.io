@@ -482,13 +482,13 @@ body {
     /* background-color: #f7f7f7; */
 }
 
-.prices .title h2 {
-    font-size: 36px;
-    font-family: 'Roboto', sans-serif;
+/* .prices .title h2 {
+    font-size: 36px; */
+    /* font-family: 'Roboto', sans-serif;
     font-weight: 500;
     text-align: center;
     padding: 0px 0 10px;
-}
+} */
 
 .prices td {
     text-align: left;
