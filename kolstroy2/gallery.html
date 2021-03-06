@@ -71,11 +71,6 @@
                     </a>
                 </div>
                 <div class="image-blok">
-                    <a class="image-popup-no-margins" href="img/gallery/floor/floor-3.jpg">
-                        <img src="img/gallery/floor/floor-3.jpg">
-                    </a>
-                </div>
-                <div class="image-blok">
                     <a class="image-popup-no-margins" href="img/gallery/floor/floor-4.jpg">
                         <img src="img/gallery/floor/floor-4.jpg">
                     </a>
@@ -218,32 +213,32 @@
             <div class="gallery__wrapper">
                 <div class="image-blok">
                     <a class="image-popup-no-margins" href="img/gallery/balki/balki1.jpg">
-                        <img src="img/balki/balki1.jpg">
+                        <img src="img/gallery/balki/balki1.jpg">
                     </a>
                 </div>
                 <div class="image-blok">
                     <a class="image-popup-no-margins" href="img/gallery/balki/balki2.jpg">
-                        <img src="img/balki/balki2.jpg">
+                        <img src="img/gallery/balki/balki2.jpg">
                     </a>
                 </div>
                 <div class="image-blok">
                     <a class="image-popup-no-margins" href="img/gallery/balki/balki3.jpg">
-                        <img src="img/balki/balki3.jpg">
+                        <img src="img/gallery/balki/balki3.jpg">
                     </a>
                 </div>
                 <div class="image-blok">
                     <a class="image-popup-no-margins" href="img/gallery/balki/balki4.jpg">
-                        <img src="img/balki/balki4.jpg">
+                        <img src="img/gallery/balki/balki4.jpg">
                     </a>
                 </div>
                 <div class="image-blok">
                     <a class="image-popup-no-margins" href="img/gallery/balki/balki5.jpg">
-                        <img src="img/balki/balki5.jpg">
+                        <img src="img/gallery/balki/balki5.jpg">
                     </a>
                 </div>
                 <div class="image-blok">
                     <a class="image-popup-no-margins" href="img/gallery/balki/balki6.jpg" title="Балки">
-                        <img src="img/balki/balki6.jpg">
+                        <img src="img/gallery/balki/balki6.jpg">
                     </a>
                 </div>
             </div>
@@ -448,44 +443,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
-    <script>
-        $(document).ready(function () {
-
-            $('.image-popup-vertical-fit').magnificPopup({
-                type: 'image',
-                closeOnContentClick: true,
-                mainClass: 'mfp-img-mobile',
-                image: {
-                    verticalFit: true
-                }
-
-            });
-
-            $('.image-popup-fit-width').magnificPopup({
-                type: 'image',
-                closeOnContentClick: true,
-                image: {
-                    verticalFit: false
-                }
-            });
-
-            $('.image-popup-no-margins').magnificPopup({
-                type: 'image',
-                closeOnContentClick: true,
-                closeBtnInside: false,
-                fixedContentPos: true,
-                mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
-                image: {
-                    verticalFit: true
-                },
-                zoom: {
-                    enabled: true,
-                    duration: 300 // don't foget to change the duration also in CSS
-                }
-            });
-
-        });
-    </script>
+    <script src="js/image-popup.js"></script>
     <script src="js/main.js"></script>
 
 </body>
