@@ -74,6 +74,9 @@ uncomment this part if you haven't added this code anywhere else
 
 .image-blok img {
     transition: box-shadow 0.3s;
+    width: 100%;
+    display: block;
+    background-image: url('data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7')
 }
 
 .image-blok img:hover {

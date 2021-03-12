@@ -74,32 +74,32 @@
             <div class="gallery__wrapper">
                 <div class="image-blok">
                     <a class="image-popup-no-margins" href="img/gallery/floor/floor-1.jpg">
-                        <img src="img/gallery/floor/floor-1.jpg">
+                        <img class="lazy" src="data:image/gif;base64,R0lGODlhWwBEAIAAAP///wAAACH5BAEAAAEALAAAAABbAEQAAAJWjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/LrwUAOw==" data-src="img/gallery/floor/floor-1.jpg">
                     </a>
                 </div>
                 <div class="image-blok">
                     <a class="image-popup-no-margins" href="img/gallery/floor/floor-2.jpg">
-                        <img src="img/gallery/floor/floor-2.jpg">
+                        <img class="lazy" src="data:image/gif;base64,R0lGODlhWwBEAIAAAP///wAAACH5BAEAAAEALAAAAABbAEQAAAJWjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/LrwUAOw==" data-src="img/gallery/floor/floor-2.jpg">
                     </a>
                 </div>
                 <div class="image-blok">
                     <a class="image-popup-no-margins" href="img/gallery/floor/floor-3.jpg">
-                        <img src="img/gallery/floor/floor-3.jpg">
+                        <img class="lazy" src="data:image/gif;base64,R0lGODlhWwBEAIAAAP///wAAACH5BAEAAAEALAAAAABbAEQAAAJWjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/LrwUAOw==" data-src="img/gallery/floor/floor-3.jpg">
                     </a>
                 </div>
                 <div class="image-blok">
                     <a class="image-popup-no-margins" href="img/gallery/floor/floor-4.jpg">
-                        <img src="img/gallery/floor/floor-4.jpg">
+                        <img class="lazy" src="data:image/gif;base64,R0lGODlhWwBEAIAAAP///wAAACH5BAEAAAEALAAAAABbAEQAAAJWjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/LrwUAOw==" data-src="img/gallery/floor/floor-4.jpg">
                     </a>
                 </div>
                 <div class="image-blok">
                     <a class="image-popup-no-margins" href="img/gallery/floor/floor-5.jpg">
-                        <img src="img/gallery/floor/floor-5.jpg">
+                        <img class="lazy" src="data:image/gif;base64,R0lGODlhWwBEAIAAAP///wAAACH5BAEAAAEALAAAAABbAEQAAAJWjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/LrwUAOw==" data-src="img/gallery/floor/floor-5.jpg">
                     </a>
                 </div>
                 <div class="image-blok">
                     <a class="image-popup-no-margins" href="img/gallery/floor/floor-6.jpg">
-                        <img src="img/gallery/floor/floor-6.jpg">
+                        <img class="lazy" src="data:image/gif;base64,R0lGODlhWwBEAIAAAP///wAAACH5BAEAAAEALAAAAABbAEQAAAJWjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/LrwUAOw==" data-src="img/gallery/floor/floor-6.jpg">
                     </a>
                 </div>
             </div>
@@ -201,7 +201,13 @@
     </footer>
 
 
-
+    <script src="js/lazyload.min.js"></script>
+	<script>
+		var lazyLoadInstance = new LazyLoad({
+			elements_selector: ".lazy"
+			// ... more custom settings?
+		});
+	</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/image-popup.js"></script>
