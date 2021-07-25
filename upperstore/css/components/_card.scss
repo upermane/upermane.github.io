@@ -1,0 +1,53 @@
+@import "../breakpoint";
+.card {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    &__item {
+        width: 18%;
+        @include tablet {
+            width: 21%;
+        }
+        @include small-tablet {
+            width: 40%;
+        }
+    }
+    &__img {
+        line-height: 0;
+        height: 380px;
+        object-fit: cover;
+        overflow: hidden;
+        @include tablet {
+            height: auto;
+        }
+        @include small-tablet {
+            height: 330px;
+        }
+        @include mobile {
+            height: 260px;
+        }
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        margin: 8px 0;
+        text-transform: uppercase;
+        color: var(--color-dark);
+        font-weight: 500;
+        font-size: 16px;
+    }
+    &__descr {
+        color: var(--color-dark);
+        font-weight: 300;
+        font-size: 14px;
+        margin: 0;
+        margin-bottom: 8px;
+    }
+    &__link {
+        color: var(--color-dark);
+        font-size: 14px;
+    }
+}

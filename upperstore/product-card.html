@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product card</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/easyzoom.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <a class="header__promo" href="#">Промоакции</a>
+        </div>
+        <div class="header__container">
+            <div class="header__bottom">
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+                    <ul class="menu__box">
+                        <li class="menu__item"><a class="menu__link" href="#">Новинки</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Футболки</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Акссесуары</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Специальные цены</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Мир Upper</a></li>
+                    </ul>
+                </div>
+                <a class="header__logo" href="#">
+                    UpperStore
+                </a>
+                <nav class="header__nav nav">
+                    <ul class="nav__list list-reset">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#" aria-label="">Новинки</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#" aria-label="">Футболки</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#" aria-label="">Акссесуары</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#" aria-label="">Специальные цены</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#" aria-label="">Мир Upper</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__account">
+                    <form class="header__form">
+                        <input class="header__search" type="search" placeholder="Поиск">
+                        <button class="btn btn-reset header__btn" type="submit"></button>
+                    </form>
+                    <a class="header__basket" href="#">
+                        <img class="header__img" src="img/basket.svg" alt="Корзина">
+                        <span>(<span class="header__counter">0</span>)</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="product-card">
+            <div class="container product-card__container">
+                <div class="product-card__preview">
+                    <ul class="thumbnails list-reset">
+                        <li class="thumbnails__item">
+                            <a class="thumbnails__link" href="img/content1.jpg" data-standard="img/content1.jpg">
+                                <img src="img/content1.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li class="thumbnails__item">
+                            <a class="thumbnails__link" href="img/content2.jpg" data-standard="img/content2.jpg">
+                                <img src="img/content2-mini.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li class="thumbnails__item">
+                            <a class="thumbnails__link" href="img/content3.jpg" data-standard="img/content3.jpg">
+                                <img src="img/content3.jpg" alt="" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product-card__images">
+                    <div class="easyzoom easyzoom--overlay easyzoom--with-thumbnails is-ready">
+                        <a href="img/content1.jpg">
+                            <img src="img/content1.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="product-card__block">
+                    <h3 class="product-card__title">
+                        Пончо
+                    </h3>
+                    <div class="product-card__price price">
+                        <span class="price__old">2121</span>
+                        <span class="price__new">321445</span>
+                    </div>
+                    <form class="product-card__form">
+                        <div class="product-card__colors">
+                            <span class="product-card__descr">Цвет:</span>
+                            <ul class="colorlist list-reset">
+                                <li class="colorlist__item">
+                                    <a class="colorlist__color colorlist__color--white colorlist__color--active" href="#"></a>
+                                </li>
+                                <li class="colorlist__item">
+                                    <a class="colorlist__color colorlist__color--black" href="#"></a>
+                                </li>
+                                <li class="colorlist__item">
+                                    <a class="colorlist__color colorlist__color--red" href="#"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="product-card__size">
+                            <span class="product-card__descr">Размер:</span>
+                            <ul class="list-size list-reset">
+                                <li class="list-size__item">XS</li>
+                                <li class="list-size__item">S</li>
+                                <li class="list-size__item">M</li>
+                                <li class="list-size__item">L</li>
+                                <li class="list-size__item">XL</li>
+                                <li class="list-size__item">XXL</li>
+                            </ul>
+                        </div>
+                        <a class="product-card__link" href="#">Таблица размеров</a>
+                        <button class="btn btn-reset product-card__btn">Добавить в корзину</button>
+                    </form>
+                    <div class="product-card__tabs">
+                        <button class="product-card__tablinks btn-reset" onclick="opentab(event, 'specification')" id="defaultOpen">Описание</button>
+                        <button class="product-card__tablinks btn-reset" onclick="opentab(event, 'payment_delivery')">Доставка и оплата</button>
+                        <button class="product-card__tablinks btn-reset" onclick="opentab(event, 'structure')">Состав и уход</button>
+                    </div>
+                    <div id="specification" class="product-card__tabcontent">
+                        <h3 class="product-card__subtitle">Куртка Willy Арт.7.7182 A1</h3>
+                        <p class="product-card__text">Куртка прямого силуэта,выполнена из комбинированных тканей: трикотаж крупной вязки и плащевка.Перед и спинка цельнокроеные с высоким воротом.На концах ворота- длинные,декоративные завязки..По переду-декоративный карман.Длина до
+                            середины бедра. Расцветка как на манекене.</p>
+                    </div>
+                    <div id="payment_delivery" class="product-card__tabcontent">
+                        <h3 class="product-card__subtitle">Куртка Willy Арт.7.7182 A2</h3>
+                        <p class="product-card__text">Доставка и оплата</p>
+                    </div>
+                    <div id="structure" class="product-card__tabcontent">
+                        <h3 class="product-card__subtitle">Куртка Willy Арт.7.7182 A3</h3>
+                        <p class="product-card__text">Состав и уход</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="catalog">
+            <div class="container catalog__container">
+                <h2 class="catalog__caption">Вам понравится</h2>
+                <ul class="catalog__list list-reset">
+                    <li class="catalog__item">
+                        <article class="product">
+                            <div class="product__img">
+                                <img src="img/content1.jpg" alt="">
+                                <a class="product__link" href="#">
+                                    <img src="https://cdn.pixabay.com/photo/2017/06/05/07/59/octopus-2373177_960_720.png" alt="">
+                                </a>
+                            </div>
+                            <span class="product__status">Exclusive</span>
+                            <a class="product__title" href="#" aria-label="">новинки</a>
+                            <div class="product__price price">
+                                <span class="price__old">2121</span>
+                                <span class="price__new">321445</span>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="catalog__item">
+                        <article class="product">
+                            <div class="product__img">
+                                <img src="img/content1.jpg" alt="">
+                            </div>
+                            <span class="product__status">Exclusive</span>
+                            <a class="product__title" href="#" aria-label="">новинки</a>
+                            <div class="product__price price">
+                                <span class="price__old">2121</span>
+                                <span class="price__new">321445</span>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="catalog__item">
+                        <article class="product">
+                            <div class="product__img">
+                                <img src="img/content1.jpg" alt="">
+                            </div>
+                            <span class="product__status">Exclusive</span>
+                            <a class="product__title" href="#" aria-label="">новинки</a>
+                            <div class="product__price price">
+                                <span class="price__old">2121</span>
+                                <span class="price__new">321445</span>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__main">
+                <div class="footer__column">
+                    <h4 class="footer__title">Часто задаваемые вопросы</h4>
+                    <ul class="foorer__list list-reset">
+                        <li class="foorer__item">
+                            <a href="#" class="footer__link">Как делать покупки</a>
+                        </li>
+                        <li class="foorer__item">
+                            <a href="#" class="footer__link">Доставка и получение</a>
+                        </li>
+                        <li class="foorer__item">
+                            <a href="#" class="footer__link">Обмен и возврат</a>
+                        </li>
+                        <li class="foorer__item">
+                            <a href="#" class="footer__link">Оплата</a>
+                        </li>
+                        <li class="foorer__item">
+                            <a href="#" class="footer__link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__title">Мир Upper</h4>
+                    <ul class="foorer__list list-reset">
+                        <li class="foorer__item">
+                            <a href="#" class="footer__link">О дизайнере</a>
+                        </li>
+                        <li class="foorer__item">
+                            <a href="#" class="footer__link">Точки продаж</a>
+                        </li>
+                        <li class="foorer__item">
+                            <a href="#" class="footer__link"> Upper by You</a>
+                        </li>
+                        <li class="foorer__item">
+                            <a href="#" class="footer__link">Upper Проект</a>
+                        </li>
+                        <li class="foorer__item">
+                            <a href="#" class="footer__link">Медиа</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__title">Специальные цены</h4>
+                    <ul class="foorer__list list-reset">
+                        <li class="foorer__item">
+                            <a href="#" class="footer__link">Специальные цены</a>
+                        </li>
+                        <li class="foorer__item">
+                            <a href="#" class="footer__link">Верхняя одежда</a>
+                        </li>
+                        <li class="foorer__item">
+                            <a href="#" class="footer__link">Пончо</a>
+                        </li>
+                        <li class="foorer__item">
+                            <a href="#" class="footer__link">Жилеты</a>
+                        </li>
+                        <li class="foorer__item">
+                            <a href="#" class="footer__link">Костюмы</a>
+                        </li>
+                        <li class="foorer__item">
+                            <a href="#" class="footer__link">Комбинезоны</a>
+                        </li>
+                        <li class="foorer__item">
+                            <a href="#" class="footer__link">Кардиган</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__title">Следуйте за нами</h4>
+                    <ul class="social social__list list-reset">
+                        <li class="social__item">
+                            <a href="#" class="social__link social__link--tw" aria-label="link to twitte"></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link social__link--fb" aria-label="link to facebook"></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link social__link--utube" aria-label="link to youtube"></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link social__link--insta" aria-label="link to instagram"></a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link social__link--beh" aria-label="link to behance"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copy">
+                <p class="footer__text">ООО «Упер» Регистрация №…. От …… УНП адрес Дата регистрации в Торговом реестре РБ</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("defaultOpen").click();
+
+        function opentab(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("product-card__tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("product-card__tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" product-card__tablinks--active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " product-card__tablinks--active";
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/easyzoom.js"></script>
+    <script>
+        // Instantiate EasyZoom instances
+        var $easyzoom = $('.easyzoom').easyZoom();
+
+        // Setup thumbnails example
+        var api1 = $easyzoom.filter('.easyzoom--with-thumbnails').data('easyZoom');
+
+        $('.thumbnails').on('click', 'a', function(e) {
+            var $this = $(this);
+
+            e.preventDefault();
+
+            // Use EasyZoom's `swap` method
+            api1.swap($this.data('standard'), $this.attr('href'));
+        });
+    </script>
+</body>
+
+</html>

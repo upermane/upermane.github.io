@@ -1,0 +1,91 @@
+@import "breakpoint";
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: var(--color-white);
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ :root {
+    --color-white: #ffffff;
+    --accent-color: #dee34d;
+    --accent-color-hover: #cbcf44;
+    --color-dark: #19191b;
+    --color-gray: #dadada;
+    --color-silver: #8B8888;
+    --color-heather: #b8becd;
+    //отступы
+    --small-offset: 20px;
+    --second-offset: 30px;
+    --main-offset: 50px;
+    --big-offset: 100px;
+}
+
+.list-reset {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-reset {
+    border: none;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1440px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.title {
+    font-weight: 500;
+    font-size: 28px;
+    margin: 0;
+    @include tablet {
+        font-size: 22px;
+    }
+}
+
+@include tablet {
+     :root {
+        --small-offset: 10px;
+        --second-offset: 16px;
+        --main-offset: 24px;
+        --big-offset: 50px;
+    }
+}

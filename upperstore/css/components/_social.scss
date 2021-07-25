@@ -1,0 +1,31 @@
+.social {
+    display: flex;
+    &__item {
+        &:not(:last-child) {
+            margin-right: var(--small-offset);
+        }
+    }
+    &__link {
+        display: block;
+        width: 38px;
+        height: 38px;
+        background-color: var(--color-gray);
+        mask-repeat: no-repeat;
+        mask-position: center;
+        &--tw {
+            mask-image: url('../../img/twitter.svg');
+        }
+        &--fb {
+            mask-image: url('../../img/facebook.svg');
+        }
+        &--utube {
+            mask-image: url('../../img/youtube.svg');
+        }
+        &--insta {
+            mask-image: url('../../img/instagram.svg');
+        }
+        &--beh {
+            mask-image: url('../../img/behance.svg');
+        }
+    }
+}

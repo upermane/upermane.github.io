@@ -1,0 +1,48 @@
+@import "../breakpoint";
+.new-product {
+    padding: var(--main-offset) 0;
+    &__title {
+        margin: 0;
+        margin-bottom: var(--small-offset);
+        font-size: 22px;
+        font-weight: 500;
+        text-align: center;
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+        border-bottom: 1px solid var(--color-gray);
+        @include small-tablet {
+            flex-wrap: wrap;
+            width: 400px;
+            margin: 0 auto;
+        }
+        @include mobile {
+            width: 320px;
+        }
+    }
+    &__item {
+        margin: 0 10px;
+        @include small-tablet {
+            width: 110px;
+            text-align: center;
+            margin: 6px;
+        }
+        @include mobile {
+            width: 100px;
+            margin: 0;
+        }
+    }
+    &__link {
+        font-size: 16px;
+        color: var(--color-silver);
+        font-weight: 400;
+        @include small-tablet {
+            font-size: 14px;
+        }
+        @include mobile {
+            font-size: 12px;
+        }
+    }
+}

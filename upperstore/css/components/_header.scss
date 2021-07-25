@@ -1,0 +1,227 @@
+@import "../breakpoint";
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: var(--color-white);
+    &__container {
+        display: flex;
+        flex-direction: column;
+        padding: 0 var(--main-offset);
+        border-bottom: 2px solid #8d8d8d96;
+        @include mobile {
+            padding: 0 var(--small-offset);
+        }
+    }
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--accent-color);
+        padding: 10px 0;
+    }
+    &__promo {
+        font-size: 14px;
+        color: var(--color-white);
+    }
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: var(--small-offset) 0;
+        background-color: var(--color-white);
+    }
+    &__logo {
+        font-family: 'Sedgwick Ave', cursive;
+        font-size: 32px;
+        color: var(--color-dark);
+        @include mobile {
+            font-size: 22px;
+        }
+    }
+    &__account {
+        display: flex;
+        align-items: center;
+    }
+    &__form {
+        position: relative;
+    }
+    &__search {
+        width: 100px;
+        padding: 6px;
+        @include mobile {
+            width: 80px;
+        }
+    }
+    &__btn {
+        width: 18px;
+        height: 18px;
+        background-image: url('../../img/search.svg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__basket {
+        display: flex;
+        align-items: center;
+        color: var(--color-dark);
+        margin-left: 10px;
+        font-weight: 500;
+    }
+    &__counter {
+        padding: 0 4px;
+    }
+    &__img {
+        width: 30px;
+        margin-right: 6px;
+    }
+}
+
+.nav {
+    &__list {
+        display: flex;
+    }
+    &__item {
+        margin: 0 10px;
+    }
+    &__link {
+        color: var(--color-dark);
+    }
+    @include tablet {
+        display: none;
+    }
+}
+
+.hamburger-menu {
+    display: none;
+    @include tablet {
+        display: flex;
+    }
+}
+
+
+/* скрываем чекбокс */
+
+#menu__toggle {
+    opacity: 0;
+}
+
+
+/* стилизуем кнопку */
+
+.menu__btn {
+    display: flex;
+    /* используем flex для центрирования содержимого */
+    align-items: center;
+    /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 50px;
+    left: 6px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+/* добавляем "гамбургер" */
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+}
+
+.menu__btn>span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn>span::after {
+    content: '';
+    top: 8px;
+}
+
+
+/* контейнер меню */
+
+.menu__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #fafdff;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    z-index: 1;
+}
+
+
+/* элементы меню */
+
+.menu__item {
+    margin: 10px 0;
+}
+
+.menu__link {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu__link:hover {
+    background-color: #CFD8DC;
+}
+
+#menu__toggle:checked~.menu__btn>span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked~.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0);
+}
+
+#menu__toggle:checked~.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+    visibility: visible;
+    left: 0;
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    transition-duration: .25s;
+}
+
+.menu__box {
+    transition-duration: .25s;
+}
+
+.menu__link {
+    transition-duration: .25s;
+}

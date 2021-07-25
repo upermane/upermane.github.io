@@ -1,0 +1,31 @@
+@import "../breakpoint";
+.content {
+    padding: var(--main-offset) 0;
+    &__title {
+        margin: 0;
+        margin-bottom: var(--main-offset);
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 20px;
+    }
+}
+
+.sale {
+    background-color: var(--accent-color);
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__title {
+        padding: var(--big-offset) 0;
+        font-weight: 600;
+        font-size: 32px;
+        text-transform: uppercase;
+        color: var(--color-white);
+        @include mobile {
+            font-size: 24px;
+        }
+    }
+}

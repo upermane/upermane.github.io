@@ -1,0 +1,32 @@
+@media (max-width: 768px) {
+    .hero {
+        padding: 40px 0;
+    }
+    .hero__container {
+        flex-direction: column-reverse;
+    }
+    .explore {
+        padding: 100px 0;
+    }
+    .explore__container {
+        flex-direction: column;
+    }
+    .feature {
+        padding-bottom: 60px;
+    }
+    .feature__list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .guide__container {
+        flex-direction: column;
+    }
+    .swiper__text {
+        margin-bottom: 20px;
+    }
+    .swiper-slide {
+        display: flex;
+        flex-direction: column;
+    }
+}

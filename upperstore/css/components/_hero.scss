@@ -1,0 +1,88 @@
+@import "../breakpoint";
+.hero {}
+
+.swipper__img {
+    img {
+        width: 100%;
+        height: 800px;
+        object-fit: cover;
+        @include desktop {
+            height: 600px;
+        }
+        @include tablet {
+            height: 500px;
+        }
+        @include small-tablet {
+            height: auto;
+        }
+    }
+}
+
+.swiper__btn {
+    position: absolute;
+    text-align: center;
+    z-index: 10;
+    bottom: 11%;
+    width: 100%;
+}
+
+.btn-swiper {
+    padding: 12px 18px;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-dark);
+    @include small-tablet {
+        padding: 8px 12px;
+        font-size: 18px;
+    }
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-container-horizontal>.swiper-pagination-bullets {
+    bottom: 4%;
+    @include small-tablet {
+        bottom: 2%;
+    }
+}
+
+.swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    background: var(--color-white);
+    opacity: 0.5;
+    @include small-tablet {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.slogan {
+    padding: var(--big-offset) 0;
+    display: flex;
+    justify-content: center;
+    &__title {
+        position: relative;
+        text-transform: uppercase;
+        color: var(--color-dark);
+        &::before {
+            position: absolute;
+            content: '';
+            left: -100px;
+            right: -100px;
+            height: 1px;
+            bottom: -100px;
+            background-color: var(--color-gray);
+            @include desktop {
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+}
