@@ -820,6 +820,9 @@ a {
     .header {
         overflow: hidden;
     }
+    .hero {
+        padding: 40px;
+    }
     .hero__container {
         flex-direction: column;
     }
@@ -859,11 +862,66 @@ a {
 }
 
 @media (max-width: 525px) {
+    .title {
+        font-size: 42px;
+        line-height: 44px;
+    }
+    .nav__item {
+        padding: 0 8px;
+    }
+    .header .btn-primary {
+        padding: 5px;
+        font-size: 14px;
+    }
+    .nav__item:last-child {
+        margin-right: auto;
+    }
+    .hero__title {
+        font-size: 42px;
+        line-height: 44px;
+    }
+    .hero__descr {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .hero__message2 {
+        padding: 10px 14px;
+    }
+    .features {
+        padding: 30px 0;
+    }
+    .features__title {
+        position: relative;
+        z-index: 1;
+    }
     .features__container {
         flex-direction: column-reverse;
     }
     .features__list {
         justify-content: center;
         padding-top: 30px;
+    }
+    .benefits__title {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .benefits__descr {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .features::after {
+        content: none;
+    }
+    .content .benefits {
+        padding: 10px;
+    }
+    .content .benefits__img {
+        margin-right: 10px;
+    }
+    .testimonial {
+        padding: 30px 0;
+    }
+    .testimonial__title {
+        margin: 0 auto 30px;
     }
 }
