@@ -239,11 +239,18 @@ a {
 }
 
 .hero__select {
+  position: relative;
   width: 220px;
   padding: 20px 0 20px 30px;
   color: #4A4C53;
   border: 0.8px solid #AFB0B9;
   border-radius: 6px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url("../img/down-arrow.svg") no-repeat right;
+  background-position-x: calc(100% - 20px);
+  background-size: 10px;
 }
 
 .hero__btn {
