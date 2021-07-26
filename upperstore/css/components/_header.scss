@@ -1,4 +1,16 @@
 @import "../breakpoint";
+.promo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+    padding: 10px 0;
+    &__link {
+        font-size: 14px;
+        color: var(--color-white);
+    }
+}
+
 .header {
     position: sticky;
     top: 0;
@@ -13,18 +25,7 @@
             padding: 0 var(--small-offset);
         }
     }
-    &__top {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: var(--accent-color);
-        padding: 10px 0;
-    }
-    &__promo {
-        font-size: 14px;
-        color: var(--color-white);
-    }
-    &__bottom {
+    &__wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
