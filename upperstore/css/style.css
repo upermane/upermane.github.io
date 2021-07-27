@@ -673,6 +673,12 @@ a {
   }
 }
 
+@media (max-width: 576px) {
+  .mailing__form {
+    width: 100%;
+  }
+}
+
 .mailing__input {
   width: 100%;
   font-weight: 400;
@@ -680,6 +686,13 @@ a {
   padding: 16px 20px;
   border: none;
   font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 576px) {
+  .mailing__input {
+    font-size: 14px;
+    padding: 14px 6px;
+  }
 }
 
 .mailing__btn {
@@ -690,6 +703,12 @@ a {
   font-weight: 600;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+@media (max-width: 576px) {
+  .mailing__btn {
+    right: 6px;
+  }
 }
 
 .footer__main {

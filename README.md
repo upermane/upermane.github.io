@@ -1,13 +1,13 @@
 # my projects
 
-[alivio](https://upermane.github.io/alivio)
+[alivio (landing page)](https://upermane.github.io/alivio) 
 
 [kolstroy](https://upermane.github.io/kolstroy)
 
-[omega](https://upermane.github.io/omega)
+[omega (landing page)](https://upermane.github.io/omega)
 
-[relap](https://upermane.github.io/relap)
+[relap (landing page)](https://upermane.github.io/relap)
 
-[thousandsunny](https://upermane.github.io/thousandsunny)
+[thousandsunny (landing page)](https://upermane.github.io/thousandsunny)
 
 [upperstore](https://upermane.github.io/upperstore)
