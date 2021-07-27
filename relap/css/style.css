@@ -82,6 +82,13 @@ body {
 
 .btn--trans {
   border: solid 1px rgba(255, 255, 255, 0.2951);
+  -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.btn--trans:hover {
+  background-color: white;
+  color: #3023ae;
 }
 
 .btn--yellow {
@@ -190,6 +197,33 @@ body {
   .header__list {
     display: none;
   }
+}
+
+.header__link {
+  position: relative;
+}
+
+.header__link::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.header__link:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 .header__item:not(:last-child) {
@@ -489,6 +523,16 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+.guilty__images {
+  width: calc(100% - 50%);
+}
+
+@media (max-width: 768px) {
+  .guilty__images {
+    width: auto;
   }
 }
 
@@ -1025,6 +1069,12 @@ body {
   color: var(--dark-color);
   mix-blend-mode: normal;
   opacity: 0.5;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.feedback__link:hover {
+  opacity: 1;
 }
 
 .feedback__input {
@@ -1144,10 +1194,16 @@ body {
   color: #FFFFFF;
   opacity: 0.5;
   margin: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .footer__link:not(:last-child) {
   margin-bottom: 8px;
+}
+
+.footer__link:hover {
+  opacity: 1;
 }
 
 .footer__form {
@@ -1200,6 +1256,12 @@ body {
   line-height: 24px;
   color: white;
   opacity: 0.5;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.footer__bottom-link:hover {
+  opacity: 1;
 }
 
 .footer__items {

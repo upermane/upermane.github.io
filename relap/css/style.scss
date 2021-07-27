@@ -77,6 +77,11 @@ body {
     }
     &--trans {
         border: solid 1px rgba(255, 255, 255, 0.2951);
+        transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        &:hover {
+            background-color: white;
+            color: #3023ae;
+        }
     }
     &--yellow {
         background-color: #ffc300;
@@ -148,6 +153,24 @@ body {
         @include small-tablet {
             display: none;
         }
+    }
+    &__link {
+        position: relative;
+    }
+    &__link::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: -6px;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease-in-out;
+    }
+    &__link:hover::before {
+        transform: scaleX(1);
     }
     &__item:not(:last-child) {
         margin-right: 46px;
@@ -345,6 +368,12 @@ body {
         align-items: center;
         @include small-tablet {
             flex-direction: column;
+        }
+    }
+    &__images {
+        width: calc(100% - 50%);
+        @include small-tablet {
+            width: auto;
         }
     }
     &__images img {
@@ -726,6 +755,10 @@ body {
         color: var(--dark-color);
         mix-blend-mode: normal;
         opacity: 0.5;
+        transition: opacity 0.3s ease-in-out;
+        &:hover {
+            opacity: 1;
+        }
     }
     &__input {
         font-family: 'Source Sans Pro', sans-serif;
@@ -809,8 +842,12 @@ body {
         color: #FFFFFF;
         opacity: 0.5;
         margin: 0;
+        transition: opacity 0.3s ease-in-out;
         &:not(:last-child) {
             margin-bottom: 8px;
+        }
+        &:hover {
+            opacity: 1;
         }
     }
     &__form {
@@ -847,6 +884,10 @@ body {
             line-height: 24px;
             color: white;
             opacity: 0.5;
+            transition: opacity 0.3s ease-in-out;
+            &:hover {
+                opacity: 1;
+            }
         }
     }
     &__items {
