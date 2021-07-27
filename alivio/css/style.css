@@ -689,4 +689,16 @@ body {
     display: none;
   }
 }
+
+@media (max-width: 475px) {
+  .hero {
+    background: linear-gradient(120deg, white 18.15%, rgba(255, 255, 255, 0.5) 53.07%), url("../img/hero-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .work__image img {
+    height: 400px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
