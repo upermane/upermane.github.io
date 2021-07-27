@@ -1175,6 +1175,10 @@ a {
     padding: 10px;
   }
   .content .benefits__img {
+    width: auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 55px;
+            flex: 0 0 55px;
     margin-right: 10px;
   }
   .testimonial {

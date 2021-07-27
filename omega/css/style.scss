@@ -211,7 +211,6 @@ a {
         align-items: center;
         justify-content: space-between;
     }
-    &__text {}
     &__title {
         max-width: 590px;
         margin: 0;
@@ -916,6 +915,8 @@ a {
         padding: 10px;
     }
     .content .benefits__img {
+        width: auto;
+        flex: 0 0 55px;
         margin-right: 10px;
     }
     .testimonial {
