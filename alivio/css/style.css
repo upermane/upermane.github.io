@@ -692,7 +692,8 @@ body {
 
 @media (max-width: 475px) {
   .hero {
-    background: linear-gradient(120deg, white 18.15%, rgba(255, 255, 255, 0.5) 53.07%), url("../img/hero-bg.jpg");
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(18.15%, #ffffff80), color-stop(53.07%, rgba(255, 255, 255, 0.5))), url("../img/hero-bg.jpg");
+    background: linear-gradient(360deg, #ffffff80 18.15%, rgba(255, 255, 255, 0.5) 53.07%), url("../img/hero-bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

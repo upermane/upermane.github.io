@@ -12,20 +12,24 @@
         background-color: var(--color-gray);
         mask-repeat: no-repeat;
         mask-position: center;
+        transition: background-color 0.3s ease-in-out;
+        &:hover {
+            background-color: rgb(165, 165, 165);
+        }
         &--tw {
-            mask-image: url('../../img/twitter.svg');
+            mask-image: url('../img/twitter.svg');
         }
         &--fb {
-            mask-image: url('../../img/facebook.svg');
+            mask-image: url('../img/facebook.svg');
         }
         &--utube {
-            mask-image: url('../../img/youtube.svg');
+            mask-image: url('../img/youtube.svg');
         }
         &--insta {
-            mask-image: url('../../img/instagram.svg');
+            mask-image: url('../img/instagram.svg');
         }
         &--beh {
-            mask-image: url('../../img/behance.svg');
+            mask-image: url('../img/behance.svg');
         }
     }
 }
