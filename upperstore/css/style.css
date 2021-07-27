@@ -271,7 +271,8 @@ a {
       -ms-flex-align: center;
           align-items: center;
   /* центрируем содержимое кнопки */
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 50px;
   left: 6px;
   width: 26px;

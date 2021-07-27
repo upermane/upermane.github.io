@@ -119,7 +119,7 @@
     /* используем flex для центрирования содержимого */
     align-items: center;
     /* центрируем содержимое кнопки */
-    position: fixed;
+    position: sticky;
     top: 50px;
     left: 6px;
     width: 26px;
