@@ -1,0 +1,122 @@
+@media (max-width: 1024px) {
+    .banner {
+        padding: 80px 0;
+    }
+    .banner__text {
+        margin: 0 auto;
+    }
+    .apps {
+        padding: 50px 0 30px 0;
+    }
+}
+
+@media (max-width: 698px) {
+    .header {
+        position: relative;
+    }
+    .herader__menu {
+        display: none;
+        position: absolute;
+        top: 74px;
+        left: 0;
+        right: 0;
+        background: #212123;
+        color: white;
+        text-align: center;
+        z-index: 1;
+    }
+    .hamburger {
+        display: block;
+        padding: 5px;
+        outline: transparent;
+    }
+    .header__item {
+        border-top: solid 1px white;
+        padding: 10px;
+    }
+    .header__item:not(:last-child) {
+        padding-right: 0;
+    }
+    .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+        background-color: #fff;
+    }
+    .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
+        background-color: #fff;
+    }
+    .header__item a::after {
+        display: none;
+    }
+    .header__link {
+        margin: 8px;
+        padding: 16px;
+        display: inline-block;
+    }
+    .apps-card {
+        flex: 0 1 40%;
+    }
+    .footer__wrapper {
+        flex-direction: column;
+    }
+    .card {
+        flex-direction: column;
+    }
+    .card__header {
+        flex: 0 1 100%;
+        position: initial;
+    }
+    .card__body {
+        position: inherit;
+        padding: 10px 0;
+    }
+    .card__name {
+        font-size: 16px;
+    }
+    .card__text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 535px) {
+    .title {
+        font-size: 24px;
+    }
+    .descr {
+        font-size: 18px;
+    }
+    .banner {
+        padding: 40px 0;
+    }
+    .banner__text {
+        padding: 20px;
+        font-size: 16px;
+    }
+    .apps-card {
+        flex: 0 1 100%;
+        margin: 10px;
+    }
+    .apps__img img {
+        max-width: 90%;
+    }
+    .about {
+        padding: 30px 0;
+    }
+    .about__wrapper {
+        flex-direction: column;
+    }
+    .about-card {
+        padding: 10px;
+    }
+    .community__descr {
+        max-width: 100%;
+    }
+    .community__link {
+        width: 50px;
+        height: 50px;
+    }
+    .thanks {
+        padding: 50px 0;
+    }
+    .thanks__descr {
+        margin-bottom: 10px;
+    }
+}
