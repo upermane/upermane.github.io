@@ -2,13 +2,11 @@
 
 [kolstroy](https://upermane.github.io/kolstroy)
 
-<<<<<<< HEAD
 [upperstore](https://upermane.github.io/upperstore)
 
-[alivio (landing page)](https://upermane.github.io/alivio) 
-=======
 [robinlabs](https://upermane.github.io/robinlabs)
->>>>>>> dev
+
+[alivio (landing page)](https://upermane.github.io/alivio) 
 
 [omega (landing page)](https://upermane.github.io/omega)
 
