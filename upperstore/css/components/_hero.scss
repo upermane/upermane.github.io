@@ -1,5 +1,8 @@
 @import "../breakpoint";
-.hero {}
+.hero {
+    position: relative;
+    overflow: hidden;
+}
 
 .swipper__img {
     img {
