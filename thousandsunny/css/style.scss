@@ -318,6 +318,9 @@ a {
 
 .testimonials {
     padding-bottom: 200px;
+    &__container {
+        overflow: hidden;
+    }
 }
 
 .guide {
